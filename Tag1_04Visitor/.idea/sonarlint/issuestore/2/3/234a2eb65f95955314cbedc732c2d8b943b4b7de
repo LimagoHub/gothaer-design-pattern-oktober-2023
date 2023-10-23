@@ -1,0 +1,11 @@
+
+]
+java:S1612"@Replace this lambda with method reference 'System.out::println'.(£ŒÀ»8çıãµ1
+G	java:S106"+Replace this use of System.out by a logger.(£ŒÀ»8çıãµ1
+\
+java:S1128":Remove this unused import 'mitarbeiter.Gehaltsempfaenger'.(¨æ£şÿÿÿÿ8çıãµ1
+Y
+java:S1128"7Remove this unused import 'mitarbeiter.Lohnempfaenger'.(¼¾šÃûÿÿÿÿ8çıãµ1
+Z
+java:S1128
+"8Remove this unused import 'java.util.function.Consumer'.(Ì†ƒÔùÿÿÿÿ8çıãµ1

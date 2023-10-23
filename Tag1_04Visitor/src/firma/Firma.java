@@ -7,6 +7,7 @@ import mitarbeiter.visitors.MitarbeiterVisitor;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
 
 public class Firma {
 
@@ -25,9 +26,10 @@ public class Firma {
     }
 
     public void iterate(MitarbeiterVisitor visitor) {
-        for(var mitarbeiter: mitarbeiters) {
-            //visitor.visit(mitarbeiter);
-            mitarbeiter.accept(visitor);
+
+        try(visitor) {
+            visitor.init();
+            mitarbeiters.forEach(m -> m.accept(visitor));
         }
     }
 }
