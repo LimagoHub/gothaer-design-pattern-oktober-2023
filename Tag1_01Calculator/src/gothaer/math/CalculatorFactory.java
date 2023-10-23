@@ -1,5 +1,7 @@
 package gothaer.math;
 
+import gothaer.common.LoggerProxy;
+
 public class CalculatorFactory {
 
     private static boolean logger = true;
@@ -23,7 +25,10 @@ public class CalculatorFactory {
 
     public static Calculator createInstance() {
         Calculator calculator = new CalculatorImpl(); // 1000
-        if(logger) calculator = new CalculatorLogger(calculator);// 2000
+        if(logger)
+            //calculator = new CalculatorLogger(calculator);// 2000
+            calculator = (Calculator) LoggerProxy.newInstance(calculator);
+
         if(secure) calculator = new CalculatorSecure(calculator) ; // 3000
         return calculator;
     }
