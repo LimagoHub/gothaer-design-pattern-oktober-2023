@@ -3,6 +3,13 @@ package de.tiere;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+    1. Event (PropertyChangedEvent) Immutable Object source, name , oldValue, newValue
+    2. PropertyChangedListener
+    3. Im Schwein verbauen
+ */
+
+
 public class Schwein {
 
     private final List<PigTooFatListener> pigTooFatListeners = new ArrayList<>();
