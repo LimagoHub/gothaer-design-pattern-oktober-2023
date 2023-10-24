@@ -1,0 +1,12 @@
+
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(õ”ÎÎÿÿÿÿÿ
+s
+java:S2095"QUse try-with-resources or close this "SubmissionPublisher" in a "finally" clause.(õ”ÎÎÿÿÿÿÿ8Š•³ƒ¶1
+E	java:S106#"+Replace this use of System.out by a logger.(öµ¥÷úÿÿÿÿ
+X
+java:S1128"6Remove this unused import 'de.processors.MyProcessor'.(âò„Ìúÿÿÿÿ8äÑ²ƒ¶1
+c
+java:S1128"ARemove this unused import 'java.util.concurrent.ExecutorService'.(æ÷–£ùÿÿÿÿ8Š•³ƒ¶1
+W
+java:S1128	":Remove this unused import 'java.util.concurrent.TimeUnit'.(Æ™ş8Š•³ƒ¶1

@@ -1,6 +1,6 @@
 package trafficlight;
 
-public class AbstractTrafficLightState implements TrafficLightState{
+public abstract class AbstractTrafficLightState implements TrafficLightState{
 
 
     private final TrafficLight trafficLight;
@@ -20,6 +20,16 @@ public class AbstractTrafficLightState implements TrafficLightState{
 
     @Override
     public void nextColor() {
+        throw new UnsupportedOperationException("Häh?");
+    }
+
+    @Override
+    public void switchOn() {
+        throw new UnsupportedOperationException("Häh?");
+    }
+
+    @Override
+    public void switchOff() {
         throw new UnsupportedOperationException("Häh?");
     }
 }
