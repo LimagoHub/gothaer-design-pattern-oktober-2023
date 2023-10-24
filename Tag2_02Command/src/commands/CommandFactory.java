@@ -1,20 +1,23 @@
 package commands;
 
+import java.lang.reflect.InvocationTargetException;
+
 public class CommandFactory {
 
+    private final static String PREFIX = "commands.";
+    private final static String SUFFIX = "Command";
+
     public static Command create(String zeile) {
-        Command result = null;
-        String [] tokens = zeile.split(" ");
-        switch (tokens[0]) {
-            case "Add": result = new AddCommand();
+
+        try {
+            var tokens = zeile.split(" ");
+            var result = (Command) Class.forName(PREFIX + tokens[0] + SUFFIX).getConstructor().newInstance();
             result.parse(tokens);
-            break;
-            case "Print":result = new PrintCommand();
-                result.parse(tokens);
-                break;
-            default:
-                System.out.println("Unbekannter Befehl");
+            return result;
+         } catch (Throwable e) {
+            e.printStackTrace();
+            return null;
         }
-        return result;
+
     }
 }
