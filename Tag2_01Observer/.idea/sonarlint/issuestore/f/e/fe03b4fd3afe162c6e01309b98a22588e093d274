@@ -1,0 +1,11 @@
+
+X	java:S125"<This block of commented-out lines of code should be removed.(•£ç8³÷ ‡¶1
+L	java:S106"+Replace this use of System.out by a logger.(‡¼¯õùÿÿÿÿ8ª­‡¶1
+M
+java:S11724"+Remove this unused method parameter "tier".(»÷°Üşÿÿÿÿ8¨­‡¶1
+G	java:S1065"+Replace this use of System.out by a logger.(÷ùŒ”8¬­‡¶1
+G	java:S106="+Replace this use of System.out by a logger.(§Ç°á8´ŠŸ‡¶1
+X
+java:S1128";Remove this unused import 'de.events.PropertyChangedEvent'.(œ¯¥Ü8¼÷ ‡¶1
+`
+java:S1128">Remove this unused import 'de.events.PropertyChangedListener'.(’™åøÿÿÿÿ8½÷ ‡¶1
