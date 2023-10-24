@@ -13,13 +13,6 @@ public class Calculator {
         memory = 0.0;
     }
 
-    public double getMemory() {
-        return memory;
-    }
-
-    public void setMemory(final double memory) {
-        this.memory = memory;
-    }
 
     public void add(double value) {
         memory += value;

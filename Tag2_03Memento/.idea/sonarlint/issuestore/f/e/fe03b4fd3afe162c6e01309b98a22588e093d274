@@ -1,4 +1,6 @@
 
-Ã
-java:S1598" This file "Main.java" should be located in "main" directory, not in "C:\Users\JoachimWagner\git\gothaer\gothaer-design-pattern-oktober-2023\Tag2_03Memento\src".(õßÇ÷şÿÿÿÿ8¹á¶1
-E	java:S106"+Replace this use of System.out by a logger.(‚ŞÏ¥ıÿÿÿÿ
+G	java:S106"+Replace this use of System.out by a logger.(­¢‘í8ÖŠ¾¶1
+>
+java:S1116"Remove this empty statement.(ü¿¡úÿÿÿÿ8ıã¶1
+G	java:S106"+Replace this use of System.out by a logger.(­¢‘í8ÿ‰¿¶1
+G	java:S106"+Replace this use of System.out by a logger.(­¢‘í8›·ä¶1
