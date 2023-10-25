@@ -1,2 +1,4 @@
 
-E	java:S106"+Replace this use of System.out by a logger.(½¦ÿÿÿÿÿ
+F	java:S106"+Replace this use of System.out by a logger.(ÊÇ h8Øä“¶1
+B
+java:S1128"%Remove this unused import 'java.awt'.(ï´µ©8Øä“¶1

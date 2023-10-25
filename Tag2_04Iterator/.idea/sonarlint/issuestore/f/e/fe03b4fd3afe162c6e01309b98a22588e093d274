@@ -1,5 +1,4 @@
 
-V
-java:S1854"9Remove this useless assignment to local variable "liste".(£…«8—ς«¶1
-G
-java:S1481"*Remove this unused "liste" local variable.(£…«8ς«¶1
+G	java:S106"+Replace this use of System.out by a logger.(Òΰ΄Η8δ–¶1
+L	java:S106"+Replace this use of System.out by a logger.(ηκ—δωÿÿÿÿ8ε–¶1
+G	java:S106"+Replace this use of System.out by a logger.(Ι„†ϊ8ε–¶1

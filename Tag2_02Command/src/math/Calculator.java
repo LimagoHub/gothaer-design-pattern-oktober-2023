@@ -32,4 +32,26 @@ public class Calculator {
     public void clear() {
         memory = 0;
     }
+
+
+
+    public CalculatorMemento getMemento() {
+        return new CalculatorMementoImpl(memory);
+    }
+
+    public void setMemento(final CalculatorMemento memento) {
+        memory = ((CalculatorMementoImpl) memento).getMemory();
+    }
+
+    private static class CalculatorMementoImpl implements CalculatorMemento {
+        private final double memory;
+
+        public CalculatorMementoImpl(final double memory) {
+            this.memory = memory;
+        }
+
+        public double getMemory() {
+            return memory;
+        }
+    }
 }
