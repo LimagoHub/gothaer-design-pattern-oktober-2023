@@ -1,5 +1,7 @@
 package de.composite;
 
+import de.composite.visitor.BankItemVisitor;
+
 public class Konto extends AbstractBankItem {
 
     private double saldo;
@@ -21,5 +23,10 @@ public class Konto extends AbstractBankItem {
         sb.append(", saldo=").append(saldo);
         sb.append('}');
         return sb.toString();
+    }
+
+    @Override
+    public void accept(final BankItemVisitor visitor) {
+        visitor.visit(this);
     }
 }

@@ -1,0 +1,8 @@
+
+[
+java:S5993"9Change the visibility of this constructor to "protected".(½ ÿÂÿÿÿÿÿ8õöğµ¶1
+]	java:S125*"<This block of commented-out lines of code should be removed.(È‹ı†øÿÿÿÿ8ùöğµ¶1
+L	java:S1064"+Replace this use of System.out by a logger.(Š¼ßıÿÿÿÿ8úöğµ¶1
+X	java:S1257"<This block of commented-out lines of code should be removed.(æÖ«ˆ8úöğµ¶1
+I
+java:S1602S",Remove useless curly braces around statement(ÔäÄõ8‚÷ğµ¶1

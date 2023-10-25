@@ -1,0 +1,11 @@
+
+W	java:S125"<This block of commented-out lines of code should be removed.(…™’T8ºŞ¸¶1
+X	java:S125"<This block of commented-out lines of code should be removed.(Ô†ïÍ8¼Ş¸¶1
+G	java:S106/"+Replace this use of System.out by a logger.(Èö¾ê8¾Ş¸¶1
+L	java:S1061"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8¿Ş¸¶1
+G	java:S1064"+Replace this use of System.out by a logger.( ü¿Ø8ÀŞ¸¶1
+L	java:S1067"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8ÁŞ¸¶1
+B
+java:S1128"%Remove this unused import 'java.sql'.(´İ…Å8ÁŞ¸¶1
+W
+java:S1068"5Remove this unused "CONNECTION_STRING" private field.(‰¡ïıøÿÿÿÿ8ÁŞ¸¶1

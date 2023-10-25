@@ -1,5 +1,7 @@
 package de.composite;
 
+import de.composite.visitor.BankItemVisitor;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
@@ -63,6 +65,12 @@ public abstract class AbstractBankItem implements Iterable<AbstractBankItem>{
         return sb.toString();
     }
 
+    public void iterate(BankItemVisitor visitor) {
+        visitor.init();
+        forEach(k->k.accept(visitor));
+        visitor.close();
+    }
+
     @Override
     public Iterator<AbstractBankItem> iterator() {
         final List<AbstractBankItem> items = new ArrayList<>();
@@ -74,4 +82,6 @@ public abstract class AbstractBankItem implements Iterable<AbstractBankItem>{
         itemsToBeFilled.add(this);
         getChildren().forEach(child->{child.iteratorImpl(itemsToBeFilled);});
     }
+
+    public abstract void accept(BankItemVisitor visitor) ;
 }
