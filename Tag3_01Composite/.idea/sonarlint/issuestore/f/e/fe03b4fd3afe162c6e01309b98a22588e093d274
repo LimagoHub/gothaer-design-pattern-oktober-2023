@@ -1,4 +1,5 @@
 
-Å
-java:S1598"¢This file "Main.java" should be located in "main" directory, not in "C:\Users\JoachimWagner\git\gothaer\gothaer-design-pattern-oktober-2023\Tag3_01Composite\src".(õßÇ÷þÿÿÿÿ8îÕ¢¬¶1
-E	java:S106"+Replace this use of System.out by a logger.(‚ÞÏ¥ýÿÿÿÿ
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´®¿È8èœ÷­¶1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ð¹ä¤øÿÿÿÿ8éœ÷­¶1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ðÀº³ùÿÿÿÿ8éœ÷­¶1
+G	java:S106!"+Replace this use of System.out by a logger.(‡œ£Ñ8ðœ÷­¶1
