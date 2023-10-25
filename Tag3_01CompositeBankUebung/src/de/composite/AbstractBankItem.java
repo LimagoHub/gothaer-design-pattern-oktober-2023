@@ -1,9 +1,11 @@
 package de.composite;
 
+import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 
-public abstract class AbstractBankItem {
+public abstract class AbstractBankItem implements Iterable<AbstractBankItem>{
 
     private AbstractBankItem parent = null;
     private String label;
@@ -34,10 +36,24 @@ public abstract class AbstractBankItem {
 
 
     public void print() {
-        System.out.println(this);
-        for(var child: getChildren()){
-            child.print();
-        }
+
+//        Iterator<AbstractBankItem> it = this.iterator();
+//        while(it.hasNext())
+//            System.out.println(it.next());
+//
+//        this.iterator().forEachRemaining(System.out::println);
+//
+//        for(var item: this){
+//            System.out.println(item);
+//        }
+
+        this.forEach(System.out::println);
+
+
+//        System.out.println(this);
+//        for(var child: getChildren()){
+//            child.print();
+//        }
     }
     @Override
     public String toString() {
@@ -45,5 +61,17 @@ public abstract class AbstractBankItem {
         sb.append(" label='").append(label).append('\'');
         sb.append('}');
         return sb.toString();
+    }
+
+    @Override
+    public Iterator<AbstractBankItem> iterator() {
+        final List<AbstractBankItem> items = new ArrayList<>();
+        iteratorImpl(items);
+        return items.iterator();
+    }
+
+    private void iteratorImpl(final List<AbstractBankItem> itemsToBeFilled){
+        itemsToBeFilled.add(this);
+        getChildren().forEach(child->{child.iteratorImpl(itemsToBeFilled);});
     }
 }

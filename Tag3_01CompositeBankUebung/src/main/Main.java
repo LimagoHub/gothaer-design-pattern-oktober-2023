@@ -24,8 +24,12 @@ public class Main {
         Konto l1_3 = new Konto("L1_3");
         e1.append(l1_3);
 
-        root.print();
+        //root.print();
 
+
+        for(var item : root){
+            System.out.println(item);
+        }
 
     }
 
